@@ -6,7 +6,7 @@ function App() {
   const [hover, setHover] = useState<HTMLElement | null>(null);
   const [pixel, setPixel] = useState(4);
   const [paint, setPaint] = useState(false);
-  const array: number[] = Array(pixel * pixel).fill('');
+  const squaresArray: number[] = Array(pixel * pixel).fill('');
 
   const initialState = { count: 0 };
 
@@ -93,11 +93,12 @@ function App() {
           }}
           className="grid-container"
         >
-          {array.map((square, key) => {
+          {squaresArray.map((square, key) => {
             return (
               <div
                 onMouseEnter={(e) => handleHover(e.target)}
                 className={`square ${key}`}
+                key={key}
               />
             );
           })}

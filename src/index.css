@@ -16,9 +16,8 @@ h1 {
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
 }
 
 .grid-container {
@@ -32,8 +31,6 @@ h1 {
 }
 .options-wrapper {
   margin-top: auto;
-  display: flex;
-  flex-direction: column;
   margin-left: 1rem;
 }
 
