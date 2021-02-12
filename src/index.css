@@ -14,7 +14,13 @@ button {
 h1 {
   color: white;
 }
-
+select {
+  display: block;
+  width: 100%;
+}
+button {
+  width: 100%;
+}
 .wrapper {
   text-align: center;
   margin-top: 5rem;
